@@ -1,0 +1,31 @@
+#include <kipr/wombat.h>
+
+int main()
+{
+    printf("Hello World\n");
+    motor(0,50);
+    motor(3,50);
+    msleep(400);
+    motor(0,0);
+    motor(3,50);
+    msleep(2500);   
+    motor(0,50);
+    motor(3,50);
+    msleep(5000);   
+    motor(0,50);
+    motor(3,0);
+    msleep(1800);    
+    motor(0,-50);
+    motor(3,-50);
+    msleep(2500);    
+    motor(0,50);
+    motor(3,0);
+    msleep(1800);     
+    motor(0,50);
+    motor(3,50);
+    msleep(4000);    
+    motor(0,0);
+    motor(3,50);
+    msleep(2700);
+    return 0;
+}
